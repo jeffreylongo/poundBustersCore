@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using poundBustersCoreV1.Models;
 using http = System.Net.Http;
 
 
@@ -40,9 +41,7 @@ namespace poundBustersCoreV1.Controllers
 
                     var stringJwt = response.Content.ReadAsStringAsync().Result;
 
-                    
-
-                    var json = JsonConvert.DeserializeObject<object>(stringJwt);
+                    var obj = JsonConvert.DeserializeObject<Token>(stringJwt);
 
                     var nextLine = "";
 
