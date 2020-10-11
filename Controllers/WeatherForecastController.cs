@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using poundBustersCoreV1.Controllers;
 
 namespace poundBustersCoreV1.Controllers
 {
@@ -28,6 +29,9 @@ namespace poundBustersCoreV1.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            var pbc = new poundBustersCoreV1.Controllers.PetFinderController();
+            pbc.GetToken();
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

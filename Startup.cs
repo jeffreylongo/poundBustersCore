@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using poundBustersCoreV1.Data;
 using poundBustersCoreV1.Models;
+using poundBustersCoreV1.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
