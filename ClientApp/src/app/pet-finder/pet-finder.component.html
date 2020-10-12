@@ -1,1 +1,23 @@
 <p>pet-finder works!</p>
+
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col">
+            <div *ngFor="let pet of pets$">
+                
+              <img src="{{ pet.photos[0].small }}" onerror="">
+            </div>
+        </div> -->
+        <div class="col">
+          <div *ngFor="let pet of pets$">
+            {{ pet.name }}
+          </div>
+        </div>
+        <div class="col">
+            <div *ngFor="let pet of pets$">
+              {{ pet.type }}
+            </div>
+        </div>
+    </div>
+</div>

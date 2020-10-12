@@ -1,19 +1,14 @@
 ﻿using System;
 namespace poundBustersCoreV1.Models
 {
-    public class Links
+    public class _links
     {
-        public class self
+        public class previous
         {
             public string href { get; set; }
         }
 
-        public class type
-        {
-            public string href { get; set; }
-        }
-
-        public class organization
+        public class next
         {
             public string href { get; set; }
         }

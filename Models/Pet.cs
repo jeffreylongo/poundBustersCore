@@ -5,27 +5,27 @@ namespace poundBustersCoreV1.Models
 {
     public class Pet
     {
-        public int ID { get; set; }
-        public int OrganizationId { get; set; }
-        public string Url { get; set; }
-        public string Type { get; set; }
-        public string Species { get; set; }
-        public Breed Breeds { get; set; }
-        public Color Colors { get; set; }
-        public string Age { get; set; }
-        public string Gender { get; set; }
-        public string Size { get; set; }
-        public string Coat { get; set; }
-        public Attribute Attributes { get; set; }
-        public List<string> Tags { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public List<string> Photos { get; set; }
-        public List<string> Videos { get; set; }
-        public string Status { get; set; }
-        public DateTime Published { get; set; }
-        public Contact Contact { get; set; }
-        public Links Link { get; set; }
+        public int id { get; set; }
+        public int organizationId { get; set; }
+        public string url { get; set; }
+        public string type { get; set; }
+        public string species { get; set; }
+        public Breed breeds { get; set; }
+        public Color colors { get; set; }
+        public string age { get; set; }
+        public string gender { get; set; }
+        public string size { get; set; }
+        public string coat { get; set; }
+        public Attribute attributes { get; set; }
+        public List<string> tags { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public List<string> photos { get; set; }
+        public List<string> videos { get; set; }
+        public string status { get; set; }
+        public DateTime published { get; set; }
+        public Contact contact { get; set; }
+        public Links link { get; set; }
     }
 }
 
