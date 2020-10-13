@@ -3,21 +3,20 @@
 
 <div class="container">
     <div class="row">
-        <!-- <div class="col">
-            <div *ngFor="let pet of pets$">
-                
-              <img src="{{ pet.photos[0].small }}" onerror="">
+        <div *ngFor="let pet of pets$">
+            <div class="card-group">
+                <div class="card">
+                    <div *ngIf="pet.photos.length > 0">
+                        <img class="card-img-top" src="{{ pet.photos[0].small }}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pet.name }}</h5>
+                        <p class="card-text">{{ pet.type }}</p>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <div class="col">
-          <div *ngFor="let pet of pets$">
-            {{ pet.name }}
-          </div>
+
         </div>
-        <div class="col">
-            <div *ngFor="let pet of pets$">
-              {{ pet.type }}
-            </div>
-        </div>
+        
     </div>
 </div>

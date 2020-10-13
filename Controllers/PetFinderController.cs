@@ -44,13 +44,6 @@ namespace poundBustersCoreV1.Controllers
                     var stringJwt = response.Content.ReadAsStringAsync().Result;
                     var obj = JsonConvert.DeserializeObject<Token>(stringJwt);
                     token = obj.access_token;
-
-
-                    //Newtonsoft.Json.JsonObjectAttribute 
-                    //JObject json = response.Content.ReadAsAsync<JObject>().Result;
-
-                    //var json = await httpClient.GetStringAsync(petFinderApiUrl+"?"+body);
-                    //await GetPets();
                 }
 
             };
@@ -64,15 +57,7 @@ namespace poundBustersCoreV1.Controllers
         public async Task<IActionResult> GetPets()
         {
 
-
             GetToken();
-            //var client = new http.HttpClient();
-            //var request = new http.HttpRequestMessage()
-            //{
-            //    RequestUri = new Uri(petFinderSearchURL),
-            //    Method = http.HttpMethod.Get,
-            //};
-
 
             using (var httpClient = new http.HttpClient())
             {
@@ -89,55 +74,7 @@ namespace poundBustersCoreV1.Controllers
 
                     return Ok(jsonString);
 
-                    //if (pfr.pagination != null)
-                    //{
-                    //    var pagination = pfr.pagination;
-                    //}
-                    //if (pfr.animals != null)
-                    //{
-                    //    var animals = pfr.animals;
-                    //}
-
-                    //var pets = pfo.animals;
-                    //var pagination = pfo.pagination;
-
-                    //var pets = JsonConvert.DeserializeObject<Pet>(response);
                 }
-
-
-                //rq.Headers.Add("Authorization", $"Bearer {token}");
-
-
-                //using (var requestMessage = new http.HttpRequestMessage(http.HttpMethod.Get, petFinderSearchURL))
-                //{
-                //    requestMessage.Headers.Authorization = new http.Headers.AuthenticationHeaderValue("Bearer", token);
-                //    var response = await httpClient.SendAsync(requestMessage);
-                //
-                //    if (response !=null)
-                //    {
-                //        var json = response.Content.ReadAsStringAsync().Result;
-                //        var pets = JsonConvert.DeserializeObject<Pet>(json);
-                //
-                //       Console.WriteLine(pets);
-                //    }
-                //}
-
-
-                //http.DefaultRequestHeaders = new AuthenticationHeaderValue()
-
-                //var task = httpClient.GetAsync(petFinderSearchURL)
-                //.ContinueWith((rq) =>
-                //{
-                //var response = rq.Result;
-                //if (response != null)
-                //{
-                //var json = response.Content.ReadAsStringAsync().Result;
-                //var pets = JsonConvert.DeserializeObject<Pet>(json);
-                //}
-                //});
-
-
-                //http.HttpResponseMessage response = await httpClient.GetAsync(petFinderSearchURL);
 
             }
             return Ok();
