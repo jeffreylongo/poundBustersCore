@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -70,8 +71,18 @@ namespace poundBustersCoreV1.Controllers
                 if (response != null)
                 {
                     var jsonString = response.Content.ReadAsStringAsync().Result;
-                    //var pfr = JsonConvert.DeserializeObject<PetFinderResponse>(jsonString);
 
+                    var pfr = JsonConvert.DeserializeObject<IList<PetFinderResponse>>(jsonString);
+                    if (pfr != null)
+                    {
+
+                    }
+                    //var pets = JsonConvert.DeserializeObject<Pet>(pfr);
+
+                    //var obj = JsonSerializer.Deserialize<PetFinderResponse>(jsonString);
+                    
+
+                    
                     return Ok(jsonString);
 
                 }

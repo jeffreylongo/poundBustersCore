@@ -1,31 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace poundBustersCoreV1.Models
 {
     public class Pet
     {
-        public int id { get; set; }
-        public int organizationId { get; set; }
-        public string url { get; set; }
-        public string type { get; set; }
-        public string species { get; set; }
-        public Breed breeds { get; set; }
-        public Color colors { get; set; }
-        public string age { get; set; }
-        public string gender { get; set; }
-        public string size { get; set; }
-        public string coat { get; set; }
-        public Attribute attributes { get; set; }
-        public List<string> tags { get; set; }
-        public string name { get; set; }
-        public string description { get; set; }
-        public List<string> photos { get; set; }
-        public List<string> videos { get; set; }
-        public string status { get; set; }
-        public DateTime published { get; set; }
-        public Contact contact { get; set; }
-        public Links link { get; set; }
+        [JsonProperty("id")]
+        public int ID { get; set; }
+        [JsonProperty("organizationId")]
+        public int OrganizationId { get; set; }
+        [JsonProperty("url")]
+        public string Url { get; set; }
+        [JsonProperty("type")]
+        public string Type { get; set; }
+        [JsonProperty("species")]
+        public string Species { get; set; }
+        [JsonProperty("breeds")]
+        public Breed Breeds { get; set; }
+        [JsonProperty("colors")]
+        public Color Colors { get; set; }
+        [JsonProperty("age")]
+        public string Age { get; set; }
+        [JsonProperty("gender")]
+        public string Gender { get; set; }
+        [JsonProperty("size")]
+        public string Size { get; set; }
+        [JsonProperty("coat")]
+        public string Coat { get; set; }
+        [JsonProperty("attributes")]
+        public Attribute Attributes { get; set; }
+        [JsonProperty("tags")]
+        public List<string> Tags { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        [JsonProperty("description")]
+        public string Description { get; set; }
+        [JsonProperty("photos")]
+        public List<string> Photos { get; set; }
+        [JsonProperty("videos")]
+        public List<string> Videos { get; set; }
+        [JsonProperty("status")]
+        public string Status { get; set; }
+        [JsonProperty("published")]
+        public DateTime Published { get; set; }
+        [JsonProperty("contact")]
+        public Contact Contact { get; set; }
+        [JsonProperty("link")]
+        public Links Link { get; set; }
     }
 }
 
