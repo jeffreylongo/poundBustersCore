@@ -14,6 +14,7 @@ import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import { PetFinderComponent } from './pet-finder/pet-finder.component';
 
 @NgModule({
@@ -37,7 +38,8 @@ import { PetFinderComponent } from './pet-finder/pet-finder.component';
       { path: 'petFinder', component: PetFinderComponent }
     ]),
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatPaginatorModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }

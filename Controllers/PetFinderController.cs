@@ -72,11 +72,11 @@ namespace poundBustersCoreV1.Controllers
                 {
                     var jsonString = response.Content.ReadAsStringAsync().Result;
 
-                    var pfr = JsonConvert.DeserializeObject<IList<PetFinderResponse>>(jsonString);
-                    if (pfr != null)
-                    {
+                    //var pfr = JsonConvert.DeserializeObject<PetFinderResponse>(jsonString);
+                    //if (pfr != null)
+                    //{
 
-                    }
+                    //}
                     //var pets = JsonConvert.DeserializeObject<Pet>(pfr);
 
                     //var obj = JsonSerializer.Deserialize<PetFinderResponse>(jsonString);

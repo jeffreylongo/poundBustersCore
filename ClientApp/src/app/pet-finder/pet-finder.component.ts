@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PetFinderService } from 'src/app/pet-finder/pet-finder.service';
 import { Observable } from 'rxjs';
+import { PageEvent } from '@angular/material/paginator';
 
 interface PetFinder {
   pet: Pet;
@@ -74,6 +75,7 @@ interface Pagination {
   };
 }
 
+
 @Component({
   selector: 'app-pet-finder',
   templateUrl: './pet-finder.component.html',
@@ -84,6 +86,9 @@ export class PetFinderComponent implements OnInit {
   petFinder$: Observable<PetFinder[]>;
   pets$: Observable<Pet[]>;
   pagination$: Observable<Pagination>;
+  pageEvent: PageEvent;
+  length: number;
+  pageSize: number;
 
   constructor(private petFinderService: PetFinderService) { }
 
@@ -94,6 +99,8 @@ export class PetFinderComponent implements OnInit {
       if (data.pagination != null) {
         this.pagination$ = data.pagination;
         console.log(`setting interfaces`);
+        this.length = data.pagination.total_count;
+        this.pageSize = data.pagination.count_per_page;
       }
       if (data.animals != null) {
         console.log(data);
