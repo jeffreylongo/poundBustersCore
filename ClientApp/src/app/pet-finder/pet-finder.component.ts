@@ -86,9 +86,14 @@ export class PetFinderComponent implements OnInit {
   petFinder$: Observable<PetFinder[]>;
   pets$: Observable<Pet[]>;
   pagination$: Observable<Pagination>;
-  pageEvent: PageEvent;
+  // pageEvent: PageEvent;
   length: number;
   pageSize: number;
+
+  pageEvent(pageEvent: PageEvent) {
+    console.log('pageEvent hit');
+    console.log(pageEvent);
+  }
 
   constructor(private petFinderService: PetFinderService) { }
 
