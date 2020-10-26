@@ -1,4 +1,4 @@
-<p>pet-finder works!</p>
+<h2>Pets</h2>
 
 
 <div class="container">
@@ -26,6 +26,10 @@
               (page)="pageEvent = $event">
     </mat-paginator>
 
+    <div *ngIf="pageEvent">
+        <h5>page event hit</h5>
+        <div>List length: {{pageEvent.length}}</div>
+    </div>
 
 
     <!-- <div class="row d-flex justify-content-center">

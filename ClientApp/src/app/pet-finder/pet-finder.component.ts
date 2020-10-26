@@ -90,10 +90,12 @@ export class PetFinderComponent implements OnInit {
   length: number;
   pageSize: number;
 
-  pageEvent(pageEvent: PageEvent) {
-    console.log('pageEvent hit');
-    console.log(pageEvent);
-  }
+  pageEvent: PageEvent;
+
+  // pageEvent(pageEvent: PageEvent) {
+  //   console.log('pageEvent hit');
+  //   console.log(pageEvent);
+  // }
 
   constructor(private petFinderService: PetFinderService) { }
 
