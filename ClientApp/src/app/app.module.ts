@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { PetFinderComponent } from './pet-finder/pet-finder.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { PetFinderComponent } from './pet-finder/pet-finder.component';
     ]),
     BrowserAnimationsModule,
     MatSliderModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }

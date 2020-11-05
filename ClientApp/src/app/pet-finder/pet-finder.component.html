@@ -1,7 +1,55 @@
-<h2>Pets</h2>
+<mat-spinner>
+<h1>Pets</h1>
 
 
 <div class="container">
+
+    <br>
+    <div class="row">
+        <h2>Mat Card</h2>
+    </div>
+
+    <div class="row">
+        <div class="card-group d-flex justify-content-center">
+        <div *ngFor="let pet of pets$">
+            <mat-card class="mat-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="header-image"></div>
+                  <mat-card-title>{{ pet.name }}</mat-card-title>
+                  <mat-card-subtitle>{{ pet.type}}</mat-card-subtitle>
+                </mat-card-header>
+                <div *ngIf="pet.photos.length > 0">
+                    <img class="pic" src="{{ pet.photos[0].large }}">
+                </div>
+                <mat-card-content>
+                  <p>
+                    Lorem Ipsum, dog dog dog s
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    </div>
+    </div>
+
+    <mat-paginator class="d-flex justify-content-center" [length]="length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        (page)="pageEvent = $event">
+    </mat-paginator>
+
+<div *ngIf="pageEvent">
+<h5>page event hit</h5>
+<div>List length: {{pageEvent.length}}</div>
+</div>
+
+
+    <div class="row">
+        <h2>Boot Card</h2>
+    </div>
 
     <div class="row">
         <div class="card-group">
@@ -12,7 +60,7 @@
                     </div>
                     <div class="card-img-overlay">
                         <h4 class="card-title">{{ pet.name }}</h4>
-                        <p class="card-text">{{ pet. type }}</p>
+                        <p class="card-text">{{ pet.type }}</p>
                         <a href="#" class="btn btn-info"></a>
                       </div>
                 </div>
@@ -20,19 +68,7 @@
         </div>
     </div>
 
-    <mat-paginator class="d-flex justify-content-center" [length]="length"
-              [pageSize]="pageSize"
-              [pageSizeOptions]="[5, 10, 25, 100]"
-              (page)="pageEvent = $event">
-    </mat-paginator>
-
-    <div *ngIf="pageEvent">
-        <h5>page event hit</h5>
-        <div>List length: {{pageEvent.length}}</div>
-    </div>
-
-
-    <!-- <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
         <nav>
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -42,5 +78,5 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </nav>
-    </div> -->
+    </div>
 </div>

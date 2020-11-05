@@ -104,7 +104,7 @@ export class PetFinderComponent implements OnInit {
       this.petFinder$ = data;
       if (data.pagination != null) {
         this.pagination$ = data.pagination;
-        console.log(`setting interfaces`);
+        console.log(`setting observables`);
         this.length = data.pagination.total_count;
         this.pageSize = data.pagination.count_per_page;
       }
