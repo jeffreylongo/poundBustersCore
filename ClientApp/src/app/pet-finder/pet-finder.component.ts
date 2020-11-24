@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { PetFinderService } from 'src/app/pet-finder/pet-finder.service';
 import { Observable } from 'rxjs';
 import { PageEvent } from '@angular/material/paginator';
+import { SpinnerComponent } from '../spinner/spinner.component';
 
 interface PetFinder {
   pet: Pet;
@@ -92,6 +93,7 @@ export class PetFinderComponent implements OnInit, AfterViewInit {
   pageEvent: PageEvent;
 
   loading: Boolean;
+  haveImagesLoaded: Boolean;
 
   // pageEvent(pageEvent: PageEvent) {
   //   console.log('pageEvent hit');
@@ -115,7 +117,7 @@ export class PetFinderComponent implements OnInit, AfterViewInit {
       }
       if (data.animals != null) {
         console.log(data);
-        this.pets$ = data.animals;
+        this.pets$ = data.animals;;
       }
       console.log(this.petFinder$);
       console.log(this.pets$);
@@ -125,7 +127,9 @@ export class PetFinderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // this.loading = false;
+    setTimeout (() => {
+      this.loading = false;
+   }, 2000);
   }
 
 }
