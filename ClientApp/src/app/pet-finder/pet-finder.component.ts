@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { PetFinderService } from 'src/app/pet-finder/pet-finder.service';
 import { Observable } from 'rxjs';
 import { PageEvent } from '@angular/material/paginator';
@@ -81,7 +81,7 @@ interface Pagination {
   templateUrl: './pet-finder.component.html',
   styleUrls: ['./pet-finder.component.css']
 })
-export class PetFinderComponent implements OnInit {
+export class PetFinderComponent implements OnInit, AfterViewInit {
   pets: any = [];
   petFinder$: Observable<PetFinder[]>;
   pets$: Observable<Pet[]>;
@@ -91,14 +91,19 @@ export class PetFinderComponent implements OnInit {
 
   pageEvent: PageEvent;
 
+  loading: Boolean;
+
   // pageEvent(pageEvent: PageEvent) {
   //   console.log('pageEvent hit');
   //   console.log(pageEvent);
   // }
 
-  constructor(private petFinderService: PetFinderService) { }
+  constructor(private petFinderService: PetFinderService) {
+    this.loading = true;
+  }
 
   ngOnInit() {
+    // this.loading = true;
     this.petFinderService.getPets()
     .subscribe((data: any) => {
       this.petFinder$ = data;
@@ -117,6 +122,10 @@ export class PetFinderComponent implements OnInit {
       console.log(this.pagination$);
     }
   );
+  }
+
+  ngAfterViewInit() {
+    // this.loading = false;
   }
 
 }
