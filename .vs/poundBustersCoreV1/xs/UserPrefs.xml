@@ -1,32 +1,42 @@
 ﻿<Properties StartupConfiguration="{6BCF5194-3FEE-4891-862F-BE1526003675}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PetFinderController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Startup.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="7" Column="32" />
-      <File FileName="ClientApp/angular.json" Line="1" Column="1" />
-      <File FileName="ClientApp/package.json" Line="39" Column="22" />
-      <File FileName="Controllers/PetFinderController.cs" Line="79" Column="21" />
-      <File FileName="ClientApp/src/app/pet-finder/pet-finder.component.html" Line="1" Column="1" />
-      <File FileName="package-lock.json" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="24" Column="25" />
+      <File FileName="Program.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="ClientApp/angular.json" />
+      <File FileName="ClientApp/package.json" />
+      <File FileName="Controllers/PetFinderController.cs" />
+      <File FileName="ClientApp/src/app/pet-finder/pet-finder.component.html" />
+      <File FileName="package-lock.json" />
+      <File FileName="poundBustersCoreV1.csproj" />
+      <File FileName="Models/_links.cs" />
+      <File FileName="Models/ApplicationUser.cs" />
+      <File FileName="Models/Attribute.cs" />
+      <File FileName="Models/Breed.cs" />
+      <File FileName="Models/Color.cs" />
+      <File FileName="Models/Contact.cs" />
+      <File FileName="Models/Links.cs" />
+      <File FileName="Models/Pagination.cs" />
+      <File FileName="Models/Pet.cs" />
+      <File FileName="Models/PetFinderResponse.cs" />
+      <File FileName="Models/Token.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="poundBustersCoreV1" expanded="True">
             <Node name="poundBustersCoreV1" expanded="True">
-              <Node name="ClientApp" expanded="True">
-                <Node name="src" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="PetFinderController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -37,7 +47,7 @@
     <BreakpointStore>
       <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Controllers/PetFinderController.cs" relfile="Controllers/PetFinderController.cs" line="17" column="1" />
       <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Controllers/PetFinderController.cs" relfile="Controllers/PetFinderController.cs" line="75" column="1" />
-      <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Controllers/PetFinderController.cs" relfile="Controllers/PetFinderController.cs" line="58" column="1" />
+      <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Startup.cs" relfile="Startup.cs" line="35" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

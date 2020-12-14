@@ -88,6 +88,7 @@
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Release/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Release/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Release/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.csprojAssemblyReference.cache
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.AssemblyInfoInputs.cache
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.AssemblyInfo.cs
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.csproj.CoreCompileInputs.cache
