@@ -64,7 +64,6 @@
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/jefflongo/Projects/poundBustersCore-main/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
-/Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.csprojAssemblyReference.cache
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.GeneratedMSBuildEditorConfig.editorconfig
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.AssemblyInfoInputs.cache
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.AssemblyInfo.cs
@@ -90,3 +89,4 @@
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/ref/poundBustersCoreV1.dll
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.pdb
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.genruntimeconfig.cache
+/Users/jefflongo/Projects/poundBustersCore-main/obj/Debug/net5.0/poundBustersCoreV1.csprojAssemblyReference.cache

@@ -89,3 +89,4 @@
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/net5.0/ref/poundBustersCoreV1.dll
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/net5.0/poundBustersCoreV1.pdb
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/net5.0/poundBustersCoreV1.genruntimeconfig.cache
+/Users/jefflongo/Projects/poundBustersCore-main/obj/Release/net5.0/poundBustersCoreV1.csprojAssemblyReference.cache

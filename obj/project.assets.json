@@ -6149,7 +6149,7 @@
       "outputPath": "/Users/jefflongo/Projects/poundBustersCore-main/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jefflongo/.nuget/NuGet/NuGet.Config"
+        "/Users/jefflongo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
