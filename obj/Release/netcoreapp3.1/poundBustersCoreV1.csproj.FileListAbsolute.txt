@@ -112,3 +112,4 @@
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.dll
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.pdb
 /Users/jefflongo/Projects/poundBustersCore-main/obj/Release/netcoreapp3.1/poundBustersCoreV1.genruntimeconfig.cache
+/Users/jefflongo/Projects/poundBustersCore-main/bin/Release/netcoreapp3.1/global.json

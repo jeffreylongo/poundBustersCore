@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{6BCF5194-3FEE-4891-862F-BE1526003675}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PetFinderController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="poundBustersCoreV1.csproj">
     <Files>
       <File FileName="appsettings.json" Line="1" Column="1" />
       <File FileName="ClientApp/angular.json" />
       <File FileName="ClientApp/package.json" />
-      <File FileName="Controllers/PetFinderController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/PetFinderController.cs" />
       <File FileName="ClientApp/src/app/pet-finder/pet-finder.component.html" />
       <File FileName="package-lock.json" />
-      <File FileName="poundBustersCoreV1.csproj" />
+      <File FileName="poundBustersCoreV1.csproj" Line="33" Column="68" />
       <File FileName="Models/_links.cs" />
       <File FileName="Models/ApplicationUser.cs" />
       <File FileName="Models/Attribute.cs" />
@@ -23,14 +23,12 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="poundBustersCoreV1" expanded="True">
+          <Node name="poundBustersCoreV1" expanded="True" selected="True">
             <Node name="poundBustersCoreV1" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="PetFinderController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True" />
             </Node>
@@ -41,11 +39,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.poundBustersCoreV1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Controllers/PetFinderController.cs" relfile="Controllers/PetFinderController.cs" line="17" column="1" />
-      <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Controllers/PetFinderController.cs" relfile="Controllers/PetFinderController.cs" line="75" column="1" />
       <Breakpoint file="/Users/jefflongo/Projects/poundBustersCore-main/Startup.cs" relfile="Startup.cs" line="35" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
